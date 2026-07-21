@@ -60,10 +60,10 @@
   const btn = document.getElementById('load-more');
   if (!btn) return;
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.project-card.hidden-project').forEach(card => {
-      card.classList.remove('hidden-project');
-      // ensure the newly shown cards animate in
-      requestAnimationFrame(() => card.classList.add('visible'));
+    document.querySelectorAll('.hidden-project').forEach(el => {
+      el.classList.remove('hidden-project');
+      // ensure the newly shown items animate in
+      requestAnimationFrame(() => el.classList.add('visible'));
     });
     btn.parentElement.classList.add('done');
   });

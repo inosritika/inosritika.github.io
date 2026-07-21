@@ -77,9 +77,8 @@
       <div class="about-grid single">
         <div class="about-text reveal">
           <p>Hey, I'm <strong>Ritika</strong> <span class="wave">👋</span></p>
-          <p>I'm a Data Scientist at Oracle, but the part of the job I actually chase is the messy middle of applied AI: the gap between a model that works in a notebook and a system a real user can trust in production. I like taking a vague business ask and turning it into a retrieval path, an agent, or an activation flow that holds up under load.</p>
-          <p>My background is Mathematics and Computing at <strong>IIT Delhi</strong>, so I tend to reach for the fundamentals first. I care about why an index is O(n) instead of O(m·n), where latency is really hiding, and whether an agent is reasoning or just guessing. I would rather ship something a little smaller that I fully understand than a black box I can't debug at 2am.</p>
-          <p>And when I'm not shipping data platforms, I'm usually building something for fun: a fully local voice interviewer, a career-intelligence tool, a hackathon project put together overnight. I learn by making things end to end, which is why most of what I know lives on my GitHub rather than in a certificate.</p>
+          <p>Data Scientist at <strong>Oracle</strong> and a Maths &amp; Computing grad from <strong>IIT Delhi</strong>. I like the messy middle of applied AI: turning fuzzy asks into retrieval, agents and voice systems that hold up in production.</p>
+          <p>Off the clock I build voice agents and hackathon projects for fun. Most of what I know lives on my GitHub, not in a certificate.</p>
           <a href="assets/Ritika_Soni_Resume.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Download CV</a>
         </div>
 
@@ -87,17 +86,17 @@
           <div class="focus-card">
             <i class="fa-solid fa-compass"></i>
             <h4>What pulls me in</h4>
-            <p>LLM systems that do real work: RAG and hybrid retrieval, agentic workflows, and real-time voice. The interesting problems live in latency, evals and trust, not just accuracy.</p>
+            <p>LLM systems that do real work: RAG, agents and real-time voice.</p>
           </div>
           <div class="focus-card">
             <i class="fa-solid fa-fingerprint"></i>
-            <h4>How I'm a little different</h4>
-            <p>I optimize for systems I can reason about. Give me a fuzzy requirement and I will trace it down to complexity, failure modes and the one number that actually moves.</p>
+            <h4>My angle</h4>
+            <p>I optimize for systems I can reason about, down to latency and failure modes.</p>
           </div>
           <div class="focus-card">
             <i class="fa-solid fa-mug-hot"></i>
-            <h4>Off the clock</h4>
-            <p>Weekend builds and hackathons, usually voice or agent projects. If an idea sounds fun at midnight, it tends to end up as a repo by the weekend.</p>
+            <h4>Right now</h4>
+            <p>Semantic turn detection, multi-agent orchestration, MCP.</p>
           </div>
         </div>
       </div>
@@ -117,31 +116,28 @@
             <h3>Data Scientist <span>@ Oracle · Fusion Data Intelligence</span></h3>
             <p class="exp-meta">Jul 2024 - Present · Bengaluru</p>
             <ul>
-              <li>Redesigned source-format migration by splitting business, schema &amp; access-control metadata into separate flows, cutting future source-onboarding effort by <strong>~70%</strong>.</li>
-              <li>Replaced O(m·n) file-version indexing with O(n) query-time merging, reducing duplicate embeddings, storage and release-prep at scale.</li>
-              <li>Built a query-routing &amp; candidate-generation engine for the <strong>NetSuite Intelligent Activation Engine</strong> (patent in progress); hybrid lookup + embedding search cut activation latency by <strong>~60-70%</strong>.</li>
-              <li>Led end-to-end onboarding of NetSuite into the <strong>AI Concierge</strong> with a source-aware RAG / intent-execution flow and runtime access mapping.</li>
-              <li>Built a distributed error-handling framework across 20+ failure scenarios; automated checks reduced manual triage by <strong>~70%</strong>.</li>
+              <li>Built the query-routing &amp; candidate-generation engine for the <strong>NetSuite Intelligent Activation Engine</strong> (patent in progress); hybrid lookup + embedding search cut activation latency by <strong>~60-70%</strong>.</li>
+              <li>Led NetSuite onboarding into the <strong>AI Concierge</strong> with a source-aware RAG and intent-execution flow.</li>
+              <li>Re-architected metadata migration and file-version indexing (O(m·n) to O(n)), cutting source-onboarding effort by <strong>~70%</strong>.</li>
             </ul>
           </div>
           <div class="exp-panel" data-panel="1">
             <h3>Data Science Intern <span>@ Oracle · RL for Supplier Selection</span></h3>
             <p class="exp-meta">May 2023 - Jul 2023 · Bengaluru</p>
-            <p class="exp-intro">A summer research internship on Oracle's supply-chain team, framing supplier selection as a sequential decision problem and solving it with reinforcement learning instead of static, rule-based procurement heuristics.</p>
+            <p class="exp-intro">Framed supplier selection as a sequential decision problem, solved with reinforcement learning instead of rule-based procurement heuristics.</p>
             <ul>
-              <li>Built a <strong>Deep Q-Learning</strong> agent with neural-network function approximation that learns to pick optimal suppliers for a given product from reward feedback, rather than relying on hand-tuned scoring rules.</li>
-              <li>Used RL to <strong>generate dynamic demand distributions</strong> directly from the environment, removing the need for pre-assumed statistical distributions and letting the model adapt as demand patterns shift.</li>
-              <li>Co-authored and <strong>drafted a patent</strong> for the RL-based supplier-selection approach (currently in progress).</li>
+              <li>Built a <strong>Deep Q-Learning</strong> agent that learns optimal suppliers from reward feedback.</li>
+              <li>Generated dynamic demand distributions with RL, removing pre-assumed distributions.</li>
+              <li>Co-drafted a <strong>patent</strong> for the approach (in progress).</li>
             </ul>
           </div>
           <div class="exp-panel" data-panel="2">
             <h3>Research Intern <span>@ National University of Singapore</span></h3>
             <p class="exp-meta">Apr 2022 - Jul 2022 · Singapore · Prof. Ganesh Neelakanta Iyer</p>
-            <p class="exp-intro">A research internship at NUS applying machine learning to real-world geospatial and epidemiological data: combining unsupervised structure discovery with supervised forecasting during the Covid-19 period.</p>
+            <p class="exp-intro">Applied ML to real-world geospatial and epidemiological data.</p>
             <ul>
-              <li>Ran an <strong>unsupervised, exploratory analysis of geolocational data</strong>, using the <strong>Elbow Method</strong> to choose the optimal number of clusters (best <em>k</em>) before modeling.</li>
-              <li>Formed location clusters with <strong>K-Means</strong>, structured the pipeline data as JSON, and built interactive map visualizations using <strong>Folium &amp; Geopy</strong> to interpret the resulting groups.</li>
-              <li>Built supervised forecasting models to <strong>predict Covid-19 case counts 10 days ahead</strong>, comparing <strong>SVM</strong> and <strong>Polynomial Regression</strong> for the projection.</li>
+              <li>Clustered geolocational data with <strong>K-Means</strong> (Elbow Method for <em>k</em>), visualized via <strong>Folium &amp; Geopy</strong>.</li>
+              <li>Forecast Covid-19 cases 10 days ahead with <strong>SVM</strong> and Polynomial Regression.</li>
             </ul>
           </div>
         </div>
@@ -150,144 +146,191 @@
 
     <!-- ===== Projects ===== -->
     <section id="projects" class="section">
-      <h2 class="section-title"><span>03.</span> Projects</h2>
-      <div class="project-grid" id="project-grid">
+      <h2 class="section-title"><span>03.</span> Featured Projects</h2>
+      <div class="featured">
 
-        <article class="project-card reveal">
-          <div class="pc-cover cover-voice">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g fill="#fff">
-                <rect x="60"  y="80"  width="14" height="40" rx="7"/>
-                <rect x="90"  y="60"  width="14" height="80" rx="7"/>
-                <rect x="120" y="40"  width="14" height="120" rx="7"/>
-                <rect x="150" y="70"  width="14" height="60" rx="7"/>
-                <rect x="180" y="30"  width="14" height="140" rx="7"/>
-                <rect x="210" y="55"  width="14" height="90" rx="7"/>
-                <rect x="240" y="75"  width="14" height="50" rx="7"/>
-                <rect x="270" y="50"  width="14" height="100" rx="7"/>
-                <rect x="300" y="72"  width="14" height="56" rx="7"/>
+        <!-- Voice Interview Coach -->
+        <article class="feature reveal">
+          <div class="feature-media">
+            <svg viewBox="0 0 680 430" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Voice Interview Coach interface preview">
+              <defs>
+                <linearGradient id="wave" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#7b83ff"/><stop offset="1" stop-color="#37d3c6"/>
+                </linearGradient>
+              </defs>
+              <rect width="680" height="430" fill="#0c0f2e"/>
+              <rect x="48" y="42" width="584" height="346" rx="22" fill="#161a44"/>
+              <circle cx="80" cy="78" r="6" fill="#ff5f57"/><circle cx="102" cy="78" r="6" fill="#febc2e"/><circle cx="124" cy="78" r="6" fill="#28c840"/>
+              <text x="300" y="84" fill="#aab0e0" font-family="Inter, sans-serif" font-size="16" font-weight="600">Mock Interview</text>
+              <rect x="520" y="65" width="88" height="27" rx="13" fill="#3a1f2c"/>
+              <circle cx="539" cy="79" r="5" fill="#ff5d6c"/><text x="551" y="84" fill="#ff97a1" font-family="Inter, sans-serif" font-size="13" font-weight="700">LIVE</text>
+              <g fill="url(#wave)">
+                <rect x="96"  y="185" width="9" height="50"  rx="4"/>
+                <rect x="118" y="160" width="9" height="100" rx="4"/>
+                <rect x="140" y="140" width="9" height="140" rx="4"/>
+                <rect x="162" y="170" width="9" height="80"  rx="4"/>
+                <rect x="184" y="120" width="9" height="180" rx="4"/>
+                <rect x="206" y="150" width="9" height="120" rx="4"/>
+                <rect x="228" y="180" width="9" height="60"  rx="4"/>
+                <rect x="250" y="135" width="9" height="150" rx="4"/>
+                <rect x="272" y="110" width="9" height="200" rx="4"/>
+                <rect x="294" y="155" width="9" height="110" rx="4"/>
+                <rect x="316" y="175" width="9" height="70"  rx="4"/>
+                <rect x="338" y="130" width="9" height="160" rx="4"/>
+                <rect x="360" y="150" width="9" height="120" rx="4"/>
+                <rect x="382" y="120" width="9" height="180" rx="4"/>
+                <rect x="404" y="165" width="9" height="90"  rx="4"/>
+                <rect x="426" y="180" width="9" height="60"  rx="4"/>
+                <rect x="448" y="140" width="9" height="140" rx="4"/>
+                <rect x="470" y="160" width="9" height="100" rx="4"/>
+                <rect x="492" y="185" width="9" height="50"  rx="4"/>
+                <rect x="514" y="150" width="9" height="120" rx="4"/>
+                <rect x="536" y="175" width="9" height="70"  rx="4"/>
+                <rect x="558" y="185" width="9" height="50"  rx="4"/>
               </g>
+              <rect x="84" y="300" width="356" height="60" rx="16" fill="#20255c"/>
+              <rect x="104" y="318" width="150" height="8" rx="4" fill="#8b93d8"/>
+              <rect x="104" y="336" width="300" height="8" rx="4" fill="#565d9e"/>
+              <rect x="462" y="304" width="88" height="30" rx="15" fill="#123a2c"/>
+              <text x="478" y="324" fill="#54e0a0" font-family="Inter, sans-serif" font-size="14" font-weight="700">2.75s</text>
+              <circle cx="576" cy="330" r="26" fill="#4f5bff"/>
+              <rect x="571" y="318" width="10" height="16" rx="5" fill="#fff"/>
+              <path d="M566 331 a10 10 0 0 0 20 0" fill="none" stroke="#fff" stroke-width="2.5"/>
+              <line x1="576" y1="341" x2="576" y2="347" stroke="#fff" stroke-width="2.5"/>
             </svg>
-            <div class="pc-links"><a href="https://github.com/inosritika/voice-interview-coach" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
           </div>
-          <div class="pc-body">
+          <div class="feature-info">
+            <span class="feature-kicker">Voice AI · Personal build</span>
             <h3>Voice Interview Coach</h3>
-            <p>A hands-free, fully local mock-interview coach. I built the whole real-time voice pipeline by hand (VAD → STT → LLM → TTS) and got response latency down to 2.75s with clause-level synthesis. It supports full-duplex barge-in using semantic turn detection, so it knows you're done talking from intent rather than silence, and the interviewer itself is an agent scored with LLM-as-judge evals.</p>
-            <ul class="pc-tags"><li>VAD</li><li>Whisper</li><li>LLM</li><li>Agentic</li></ul>
+            <p>A fully local, real-time voice agent (VAD → STT → LLM → TTS) with 2.75s replies and full-duplex barge-in. The interviewer is an agent, scored with LLM-as-judge.</p>
+            <ul class="pc-tags"><li>Whisper</li><li>LLM</li><li>Agentic</li><li>Realtime</li></ul>
+            <div class="feature-links">
+              <a href="https://github.com/inosritika/voice-interview-coach" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal">
-          <div class="pc-cover cover-agents">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g stroke="#fff" stroke-width="3" opacity=".85">
-                <line x1="200" y1="100" x2="110" y2="55"/>
-                <line x1="200" y1="100" x2="300" y2="55"/>
-                <line x1="200" y1="100" x2="100" y2="150"/>
-                <line x1="200" y1="100" x2="300" y2="150"/>
+        <!-- Trajectory -->
+        <article class="feature reveal reverse">
+          <div class="feature-media">
+            <svg viewBox="0 0 680 430" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Trajectory career intelligence app preview">
+              <defs>
+                <linearGradient id="traj" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#0a1030"/><stop offset="1" stop-color="#0e1c48"/>
+                </linearGradient>
+              </defs>
+              <rect width="680" height="430" fill="url(#traj)"/>
+              <g fill="#4cd6ff" opacity="0.12">
+                <circle cx="120" cy="120" r="2.5"/><circle cx="200" cy="90" r="2.5"/><circle cx="560" cy="140" r="2.5"/>
+                <circle cx="500" cy="90" r="2.5"/><circle cx="600" cy="260" r="2.5"/><circle cx="90" cy="300" r="2.5"/>
               </g>
-              <g fill="#fff">
-                <circle cx="200" cy="100" r="20"/>
-                <circle cx="110" cy="55" r="13"/>
-                <circle cx="300" cy="55" r="13"/>
-                <circle cx="100" cy="150" r="13"/>
-                <circle cx="300" cy="150" r="13"/>
-              </g>
+              <circle cx="60" cy="52" r="10" fill="none" stroke="#4cd6ff" stroke-width="2"/><circle cx="60" cy="52" r="3" fill="#4cd6ff"/>
+              <text x="82" y="58" fill="#eaf6ff" font-family="Inter, sans-serif" font-size="17" font-weight="700">Trajectory</text>
+              <circle cx="512" cy="52" r="4" fill="#4cd6ff"/><text x="524" y="57" fill="#7fd8f0" font-family="Inter, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">SESSION LIVE</text>
+              <text x="340" y="168" text-anchor="middle" fill="#ffffff" font-family="Poppins, sans-serif" font-size="34" font-weight="800">See the <tspan fill="#4cd6ff">different</tspan></text>
+              <text x="340" y="208" text-anchor="middle" fill="#ffffff" font-family="Poppins, sans-serif" font-size="34" font-weight="800">futures your career</text>
+              <text x="340" y="246" text-anchor="middle" fill="#c6cdf0" font-family="Poppins, sans-serif" font-size="24" font-weight="500" font-style="italic">has already sketched.</text>
+              <rect x="150" y="300" width="380" height="54" rx="14" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.14"/>
+              <text x="176" y="333" fill="#8ea0c8" font-family="monospace" font-size="15">linkedin.com/in/…</text>
+              <rect x="424" y="310" width="96" height="34" rx="10" fill="#4cd6ff"/>
+              <text x="440" y="332" fill="#062033" font-family="Inter, sans-serif" font-size="13" font-weight="700">Generate →</text>
             </svg>
-            <div class="pc-links"><a href="https://github.com/inosritika" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
           </div>
-          <div class="pc-body">
-            <h3>Enterprise Work Intelligence (Codex Plugin)</h3>
-            <p>An OraHacks 2026 project. A Codex plugin that pulls approved context from Outlook, Slack, Jira, Confluence, Zoom summaries and code repos into one prioritized work dashboard. Under the hood it runs a multi-agent workflow that spawns independent sub-agents for parallel investigation, planning and reply drafting, backed by a compact JSON memory so a fresh run starts with full context.</p>
-            <ul class="pc-tags"><li>Multi-agent</li><li>Codex</li><li>MCP</li></ul>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="pc-cover cover-career">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <polyline points="60,150 130,120 200,135 270,70 340,45" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <g fill="#fff">
-                <circle cx="60" cy="150" r="7"/>
-                <circle cx="130" cy="120" r="7"/>
-                <circle cx="200" cy="135" r="7"/>
-                <circle cx="270" cy="70" r="7"/>
-                <circle cx="340" cy="45" r="9"/>
-              </g>
-            </svg>
-            <div class="pc-links"><a href="https://crustdata-hackathon-yc.vercel.app" target="_blank" rel="noopener" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/inosritika/crustdata-hackathon-yc" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
-          </div>
-          <div class="pc-body">
-            <h3>Trajectory: Career Intelligence</h3>
-            <p>Built at the Crustdata x Y Combinator hackathon. A career analyzer that benchmarks you against real peers through the Crustdata API, then finds your "career twins", people who started on a similar path and then diverged, so you can see the roles, pay bands and moves that might come next, complete with warm intros and drafted outreach.</p>
+          <div class="feature-info">
+            <span class="feature-kicker">Career Intelligence · Crustdata × YC</span>
+            <h3>Trajectory</h3>
+            <p>Paste a LinkedIn, get a data-backed career read: peer benchmarks, "career twins" who diverged, and the cheapest next move. Live at a hackathon.</p>
             <ul class="pc-tags"><li>Next.js</li><li>Crustdata API</li><li>LLM</li></ul>
+            <div class="feature-links">
+              <a href="https://crustdata-hackathon-yc.vercel.app" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live demo</a>
+              <a href="https://github.com/inosritika/crustdata-hackathon-yc" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal hidden-project">
-          <div class="pc-cover cover-nlp">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g fill="#fff">
-                <path d="M70 55 h150 a16 16 0 0 1 16 16 v34 a16 16 0 0 1 -16 16 h-95 l-30 24 v-24 h-25 a16 16 0 0 1 -16 -16 v-34 a16 16 0 0 1 16 -16z" opacity=".95"/>
-                <path d="M250 95 h90 a14 14 0 0 1 14 14 v26 a14 14 0 0 1 -14 14 h-14 v20 l-26 -20 h-50 a14 14 0 0 1 -14 -14 v-26 a14 14 0 0 1 14 -14z" opacity=".6"/>
+        <!-- Enterprise Work Intelligence -->
+        <article class="feature reveal">
+          <div class="feature-media">
+            <svg viewBox="0 0 680 430" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Enterprise Work Intelligence dashboard preview">
+              <rect width="680" height="430" fill="#0c0f2e"/>
+              <rect x="44" y="44" width="592" height="342" rx="20" fill="#151a45"/>
+              <path d="M44 64 a20 20 0 0 1 20 -20 h132 v342 h-132 a20 20 0 0 1 -20 -20 z" fill="#101332"/>
+              <text x="76" y="86" fill="#e7e9ff" font-family="Poppins, sans-serif" font-size="15" font-weight="700">Work Intel</text>
+              <g font-family="Inter, sans-serif" font-size="13" fill="#aab0e0">
+                <circle cx="80" cy="126" r="5" fill="#7c3aed"/><text x="94" y="130">Slack</text>
+                <circle cx="80" cy="156" r="5" fill="#2f80ed"/><text x="94" y="160">Jira</text>
+                <circle cx="80" cy="186" r="5" fill="#22a3d6"/><text x="94" y="190">Outlook</text>
+                <circle cx="80" cy="216" r="5" fill="#2d8cff"/><text x="94" y="220">Zoom</text>
+                <circle cx="80" cy="246" r="5" fill="#8891b5"/><text x="94" y="250">Repos</text>
               </g>
+              <text x="228" y="90" fill="#8f97cf" font-family="Inter, sans-serif" font-size="12" font-weight="600" letter-spacing="1">PRIORITIZED</text>
+              <g>
+                <rect x="228" y="104" width="372" height="70" rx="12" fill="#1d2358"/>
+                <rect x="228" y="104" width="6" height="70" rx="3" fill="#ff5d6c"/>
+                <rect x="248" y="122" width="180" height="9" rx="4" fill="#9aa2e0"/>
+                <rect x="248" y="142" width="300" height="8" rx="4" fill="#565d9e"/>
+                <rect x="248" y="156" width="240" height="8" rx="4" fill="#565d9e"/>
+                <rect x="228" y="186" width="372" height="70" rx="12" fill="#1d2358"/>
+                <rect x="228" y="186" width="6" height="70" rx="3" fill="#febc2e"/>
+                <rect x="248" y="204" width="150" height="9" rx="4" fill="#9aa2e0"/>
+                <rect x="248" y="224" width="290" height="8" rx="4" fill="#565d9e"/>
+                <rect x="248" y="238" width="210" height="8" rx="4" fill="#565d9e"/>
+                <rect x="228" y="268" width="372" height="70" rx="12" fill="#1d2358"/>
+                <rect x="228" y="268" width="6" height="70" rx="3" fill="#3ecf8e"/>
+                <rect x="248" y="286" width="170" height="9" rx="4" fill="#9aa2e0"/>
+                <rect x="248" y="306" width="270" height="8" rx="4" fill="#565d9e"/>
+                <rect x="248" y="320" width="200" height="8" rx="4" fill="#565d9e"/>
+              </g>
+              <g stroke="#4f5bff" stroke-width="2" opacity="0.8">
+                <line x1="548" y1="86" x2="512" y2="86"/><line x1="548" y1="86" x2="584" y2="86"/>
+              </g>
+              <g fill="#4f5bff"><circle cx="548" cy="86" r="7"/><circle cx="512" cy="86" r="5"/><circle cx="584" cy="86" r="5"/></g>
             </svg>
-            <div class="pc-links"><a href="https://github.com/inosritika/Deep-Learning-for-NLP-ELL884" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
           </div>
-          <div class="pc-body">
-            <h3>Counterspeech &amp; Text Classification</h3>
-            <p>NLP coursework under Prof. Tanmoy Chakraborty. I fine-tuned DialoGPT with PEFT adapters (LoRA and prompt tuning) after T5/BART baselines across 5 intent classes, and built BERT/GPT classifiers on around 50K titles and abstracts using custom heads and 14-label training, without leaning on pre-trained word embeddings.</p>
-            <ul class="pc-tags"><li>DialoGPT</li><li>LoRA</li><li>BERT</li></ul>
+          <div class="feature-info">
+            <span class="feature-kicker">Multi-agent · OraHacks 2026</span>
+            <h3>Enterprise Work Intelligence</h3>
+            <p>A Codex plugin that unifies Slack, Jira, Outlook, Zoom and repos into one prioritized dashboard, driven by parallel sub-agents with shared JSON memory.</p>
+            <ul class="pc-tags"><li>Multi-agent</li><li>Codex</li><li>MCP</li></ul>
+            <div class="feature-links">
+              <a href="https://github.com/inosritika" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal hidden-project">
-          <div class="pc-cover cover-gen">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g fill="#fff">
-                <rect x="150" y="45" width="46" height="46" rx="8"/>
-                <rect x="204" y="45" width="46" height="46" rx="8" opacity=".55"/>
-                <rect x="258" y="45" width="46" height="46" rx="8"/>
-                <rect x="150" y="99" width="46" height="46" rx="8" opacity=".55"/>
-                <rect x="204" y="99" width="46" height="46" rx="8"/>
-                <rect x="258" y="99" width="46" height="46" rx="8" opacity=".55"/>
-                <circle cx="110" cy="72" r="8"/>
-                <circle cx="110" cy="118" r="8"/>
-              </g>
-            </svg>
-            <div class="pc-links"><a href="https://github.com/inosritika/Digital-Image-Processing-ELL715" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+      <h3 class="more-title reveal hidden-project"><i class="fa-solid fa-graduation-cap"></i> From my coursework &amp; research</h3>
+      <div class="more-grid" id="more-grid">
+
+        <article class="mini-card reveal hidden-project">
+          <div class="mini-top"><i class="fa-solid fa-comments mi"></i>
+            <a href="https://github.com/inosritika/Deep-Learning-for-NLP-ELL884" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
-          <div class="pc-body">
-            <h3>Generative Modeling for Image Synthesis</h3>
-            <p>Digital Image Processing coursework. I implemented VAE and DCGAN pipelines on MNIST and CIFAR-10 to learn data distributions and sample from latent space, then tuned architecture and hyperparameters to compare the two on stability, fidelity, convergence and mode collapse.</p>
-            <ul class="pc-tags"><li>VAE</li><li>DCGAN</li><li>PyTorch</li></ul>
-          </div>
+          <h4>Counterspeech &amp; Text Classification</h4>
+          <p>Fine-tuned DialoGPT with LoRA / prompt tuning, plus BERT/GPT classifiers on ~50K abstracts.</p>
+          <ul class="pc-tags"><li>DialoGPT</li><li>LoRA</li><li>BERT</li></ul>
         </article>
 
-        <article class="project-card reveal hidden-project">
-          <div class="pc-cover cover-systems">
-            <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <g fill="#fff">
-                <rect x="130" y="45" width="140" height="30" rx="8"/>
-                <rect x="130" y="85" width="140" height="30" rx="8" opacity=".7"/>
-                <rect x="130" y="125" width="140" height="30" rx="8" opacity=".45"/>
-              </g>
-              <g fill="#fff">
-                <circle cx="150" cy="60" r="5"/><circle cx="150" cy="100" r="5"/><circle cx="150" cy="140" r="5"/>
-              </g>
-            </svg>
-            <div class="pc-links"><a href="https://github.com/inosritika/Operating-Systems-MTL458" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        <article class="mini-card reveal hidden-project">
+          <div class="mini-top"><i class="fa-solid fa-wand-magic-sparkles mi"></i>
+            <a href="https://github.com/inosritika/Digital-Image-Processing-ELL715" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
-          <div class="pc-body">
-            <h3>Systems &amp; Algorithms Coursework</h3>
-            <p>A collection of lower-level work from IIT Delhi: an OS process scheduler in C, a cryptocurrency data-structures project, cloud-computing experiments and a stack of DSA assignments across C, C++, Java and Verilog. This is where I got comfortable with the fundamentals I still lean on today.</p>
-            <ul class="pc-tags"><li>C/C++</li><li>Java</li><li>OS</li></ul>
+          <h4>Generative Modeling for Image Synthesis</h4>
+          <p>VAE and DCGAN pipelines on MNIST / CIFAR-10, compared on fidelity and mode collapse.</p>
+          <ul class="pc-tags"><li>VAE</li><li>DCGAN</li><li>PyTorch</li></ul>
+        </article>
+
+        <article class="mini-card reveal hidden-project">
+          <div class="mini-top"><i class="fa-solid fa-microchip mi"></i>
+            <a href="https://github.com/inosritika/Operating-Systems-MTL458" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
+          <h4>Systems &amp; Algorithms</h4>
+          <p>OS process scheduler in C, a crypto data-structures project, and DSA across C, C++, Java, Verilog.</p>
+          <ul class="pc-tags"><li>C/C++</li><li>Java</li><li>OS</li></ul>
         </article>
 
       </div>
       <div class="load-more-wrap">
-        <button id="load-more" class="btn btn-outline">Load more projects <i class="fa-solid fa-arrow-down"></i></button>
+        <button id="load-more" class="btn btn-outline">Show coursework projects <i class="fa-solid fa-arrow-down"></i></button>
       </div>
     </section>
 

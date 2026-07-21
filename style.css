@@ -199,45 +199,49 @@ main { margin-left: 84px; }
 .exp-panel li::before { content: "▹"; position: absolute; left: 0; color: var(--coral); }
 @keyframes fade { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: none;} }
 
-/* ===== Projects ===== */
-.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 26px; }
-.project-card {
-  background: var(--card); border: 1px solid var(--border); border-radius: 18px;
-  box-shadow: var(--shadow); transition: transform .3s, box-shadow .3s;
-  display: flex; flex-direction: column; overflow: hidden;
-}
-.project-card:hover { transform: translateY(-8px); box-shadow: 0 26px 44px -20px rgba(40,40,90,.35); }
-.project-card.hidden-project { display: none; }
-
-.pc-cover { position: relative; height: 150px; display: grid; place-items: center; overflow: hidden; }
-.pc-cover svg { width: 100%; height: 100%; }
-.pc-cover::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,.12)); }
-.cover-voice   { background: linear-gradient(135deg, #4f5bff, #8b5cf6); }
-.cover-agents  { background: linear-gradient(135deg, #12b3a6, #3ecf8e); }
-.cover-career  { background: linear-gradient(135deg, #ff5d6c, #ff9a3c); }
-.cover-nlp     { background: linear-gradient(135deg, #2f80ed, #56ccf2); }
-.cover-gen     { background: linear-gradient(135deg, #a855f7, #ec4899); }
-.cover-systems { background: linear-gradient(135deg, #475569, #6366f1); }
-
-.pc-links { position: absolute; top: 12px; right: 12px; display: flex; gap: 8px; z-index: 2; }
-.pc-links a {
-  width: 32px; height: 32px; border-radius: 9px; display: grid; place-items: center;
-  background: rgba(255,255,255,.22); color: #fff; font-size: .95rem;
-  backdrop-filter: blur(4px); transition: background .2s, transform .2s;
-}
-.pc-links a:hover { background: rgba(255,255,255,.4); transform: translateY(-2px); }
-
-.pc-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
-.project-card h3 { font-size: 1.15rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
-.project-card p { color: var(--muted); font-size: .9rem; flex: 1; }
+/* ===== Projects (featured rows) ===== */
+.hidden-project { display: none !important; }
 .pc-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 .pc-tags li { font-size: .74rem; font-weight: 600; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 4px 10px; border-radius: 14px; }
 
-/* Load more */
-.load-more-wrap { display: flex; justify-content: center; margin-top: 36px; }
-.btn-outline {
-  background: transparent; color: var(--accent); border: 2px solid var(--accent);
+.featured { display: flex; flex-direction: column; gap: 64px; }
+.feature { display: grid; grid-template-columns: 1.05fr .95fr; gap: 44px; align-items: center; }
+.feature.reverse .feature-media { order: 2; }
+.feature-media {
+  border-radius: 18px; overflow: hidden; aspect-ratio: 680 / 430;
+  box-shadow: var(--shadow); border: 1px solid var(--border);
+  transition: transform .35s ease, box-shadow .35s ease;
 }
+.feature-media:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -22px rgba(40,40,90,.45); }
+.feature-media svg { width: 100%; height: 100%; display: block; }
+.feature-kicker { color: var(--accent); font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
+.feature-info h3 { font-family: 'Poppins'; font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; font-weight: 700; }
+.feature-info p { color: var(--muted); font-size: .98rem; }
+.feature-links { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.feature-links a {
+  display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: .88rem;
+  color: var(--navy); border: 1px solid var(--border); padding: 9px 16px; border-radius: 10px;
+  transition: border-color .2s, color .2s, transform .2s;
+}
+.feature-links a:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+/* ===== More projects (compact) ===== */
+.more-title { font-family: 'Poppins'; color: var(--navy); font-size: 1.15rem; font-weight: 600; margin: 74px 0 22px; display: flex; align-items: center; gap: 10px; }
+.more-title i { color: var(--accent); }
+.more-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.mini-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px; box-shadow: var(--shadow); transition: transform .3s; }
+.mini-card:hover { transform: translateY(-5px); }
+.mini-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.mini-top .mi { font-size: 1.4rem; color: var(--accent-2); }
+.mini-top a { color: var(--muted); font-size: 1.05rem; transition: color .2s; }
+.mini-top a:hover { color: var(--accent); }
+.mini-card h4 { font-family: 'Poppins'; color: var(--navy); font-size: 1.02rem; margin-bottom: 8px; font-weight: 600; }
+.mini-card p { color: var(--muted); font-size: .85rem; }
+.mini-card .pc-tags { margin-top: 14px; }
+
+/* Load more */
+.load-more-wrap { display: flex; justify-content: center; margin-top: 32px; }
+.btn-outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
 .btn-outline:hover { background: var(--accent); color: #fff; transform: translateY(-3px); }
 .load-more-wrap.done { display: none; }
 
@@ -286,6 +290,9 @@ main { margin-left: 84px; }
   .mobile-nav a { padding: 10px 0; color: var(--text); font-weight: 600; border-bottom: 1px solid var(--border); }
   .about-grid, .exp-wrap { grid-template-columns: 1fr; }
   .focus-cards { margin-top: 8px; }
+  .feature { grid-template-columns: 1fr; gap: 22px; }
+  .feature.reverse .feature-media { order: 0; }
+  .feature-info h3 { font-size: 1.4rem; }
   .exp-tabs { flex-direction: row; overflow-x: auto; }
   .exp-tab { border-left: none; border-bottom: 3px solid transparent; white-space: nowrap; }
   .exp-tab.active { border-left: none; border-bottom-color: var(--accent); }
