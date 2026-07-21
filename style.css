@@ -197,7 +197,8 @@ main { margin-left: 84px; }
 .pc-tags li { font-size: .74rem; font-weight: 600; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 4px 10px; border-radius: 14px; }
 
 /* ===== Skills ===== */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
+#skills { max-width: 1240px; }
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; align-items: start; }
 .skill-group {
   background: var(--card); border: 1px solid var(--border); border-radius: 16px;
   padding: 26px; box-shadow: var(--shadow);
@@ -244,4 +245,11 @@ main { margin-left: 84px; }
   .exp-tab.active { border-left: none; border-bottom-color: var(--accent); }
   .hero-name { font-size: 2.6rem; }
   .section { padding: 70px 24px; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .skills-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 861px) and (max-width: 1120px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
 }
