@@ -119,6 +119,12 @@ main { margin-left: 84px; }
 }
 .hero-inner { position: relative; z-index: 2; }
 .hero-illustration svg { width: 260px; height: auto; }
+.hero-photo {
+  width: 250px; height: 250px; border-radius: 50%; object-fit: cover;
+  object-position: center;
+  border: 6px solid var(--card);
+  box-shadow: 0 20px 45px -15px rgba(79, 91, 255, .45);
+}
 .hero-name {
   font-size: 3.6rem; color: var(--navy); font-weight: 800; margin-top: 6px;
   letter-spacing: -1px;
