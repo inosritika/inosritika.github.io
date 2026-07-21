@@ -55,6 +55,20 @@
   els.forEach(el => io.observe(el));
 })();
 
+// ===== Load more projects =====
+(function () {
+  const btn = document.getElementById('load-more');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.project-card.hidden-project').forEach(card => {
+      card.classList.remove('hidden-project');
+      // ensure the newly shown cards animate in
+      requestAnimationFrame(() => card.classList.add('visible'));
+    });
+    btn.parentElement.classList.add('done');
+  });
+})();
+
 // ===== Scroll-spy for sidebar =====
 (function () {
   const sections = document.querySelectorAll('main section[id]');
