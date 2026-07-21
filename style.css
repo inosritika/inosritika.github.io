@@ -156,6 +156,7 @@ main { margin-left: 84px; }
 
 /* ===== About ===== */
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 46px; align-items: start; }
+.about-grid.single { grid-template-columns: 1fr; max-width: 720px; }
 .about-text p { margin-bottom: 16px; color: var(--text); }
 .about-text p:first-child { font-size: 1.35rem; font-weight: 600; color: var(--navy); font-family: 'Poppins'; margin-bottom: 8px; }
 .about-text .btn { margin-top: 10px; }
