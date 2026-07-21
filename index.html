@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritika Soni — Data Scientist &amp; ML / LLM Engineer</title>
+  <meta name="description" content="Ritika Soni — Data Scientist and ML / LLM Engineer at Oracle. IIT Delhi. Building agentic AI, RAG systems, and scalable ML platforms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar">
+    <a href="#home" class="side-logo" aria-label="Home">RS</a>
+    <nav class="side-nav">
+      <a href="#home" class="nav-link active" data-tip="Home"><i class="fa-solid fa-house"></i></a>
+      <a href="#about" class="nav-link" data-tip="About"><i class="fa-solid fa-user"></i></a>
+      <a href="#experience" class="nav-link" data-tip="Experience"><i class="fa-solid fa-briefcase"></i></a>
+      <a href="#projects" class="nav-link" data-tip="Projects"><i class="fa-solid fa-layer-group"></i></a>
+      <a href="#skills" class="nav-link" data-tip="Skills"><i class="fa-solid fa-code"></i></a>
+      <a href="#contact" class="nav-link" data-tip="Contact"><i class="fa-solid fa-comment-dots"></i></a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </aside>
+
+  <!-- mobile top bar -->
+  <header class="mobile-bar">
+    <a href="#home" class="side-logo">RS</a>
+    <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle-mobile" class="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+  </nav>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="home" class="hero">
+      <div class="shapes" aria-hidden="true">
+        <span class="shape s1"></span><span class="shape s2"></span><span class="shape s3"></span>
+        <span class="shape s4"></span><span class="shape s5"></span><span class="shape s6"></span>
+        <span class="shape s7"></span><span class="shape s8"></span>
+      </div>
+      <div class="hero-inner reveal">
+        <div class="hero-illustration">
+          <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Developer illustration">
+            <ellipse cx="200" cy="300" rx="150" ry="22" fill="var(--illus-shadow)"/>
+            <circle cx="200" cy="150" r="120" fill="var(--illus-bg)"/>
+            <!-- desk -->
+            <rect x="70" y="235" width="260" height="12" rx="6" fill="var(--accent-2)"/>
+            <!-- monitor -->
+            <rect x="150" y="150" width="100" height="70" rx="8" fill="var(--navy)"/>
+            <rect x="158" y="158" width="84" height="54" rx="4" fill="var(--accent)"/>
+            <rect x="166" y="166" width="40" height="6" rx="3" fill="#fff" opacity=".85"/>
+            <rect x="166" y="178" width="60" height="6" rx="3" fill="#fff" opacity=".55"/>
+            <rect x="166" y="190" width="34" height="6" rx="3" fill="#fff" opacity=".55"/>
+            <rect x="190" y="220" width="20" height="15" fill="var(--navy)"/>
+            <rect x="178" y="234" width="44" height="6" rx="3" fill="var(--navy)"/>
+            <!-- person -->
+            <circle cx="120" cy="170" r="24" fill="var(--illus-skin)"/>
+            <path d="M96 168 a24 24 0 0 1 48 0 q0 -34 -24 -34 q-24 0 -24 34z" fill="var(--navy)"/>
+            <path d="M100 195 q20 20 40 0 l10 45 h-60 z" fill="var(--accent-3)"/>
+            <rect x="108" y="205" width="12" height="34" rx="6" fill="var(--illus-skin)"/>
+            <!-- plant -->
+            <rect x="300" y="205" width="26" height="30" rx="4" fill="var(--accent-2)"/>
+            <path d="M313 205 q-18 -22 -6 -40 q10 16 6 40z" fill="var(--accent-3)"/>
+            <path d="M313 205 q18 -18 8 -38 q-12 14 -8 38z" fill="var(--accent-3)"/>
+          </svg>
+        </div>
+        <h1 class="hero-name">Ritika Soni</h1>
+        <p class="hero-role">Data Scientist &amp; ML / LLM Engineer</p>
+        <div class="hero-socials">
+          <a href="https://github.com/inosritika" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ritika001/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:ritikasoni.iit.delhi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+      </div>
+      <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-circle-dot"></i>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span>01.</span> About Me</h2>
+      <div class="about-grid single">
+        <div class="about-text reveal">
+          <p>Hi, I'm <strong>Ritika Soni</strong> — a Data Scientist on Oracle's <strong>Fusion Data Intelligence</strong> team, with a foundation in mathematics and computing built at <strong>IIT Delhi</strong>. I design and ship scalable ML and LLM systems: metadata search platforms, hybrid retrieval and RAG pipelines, agentic workflows, and intelligent activation engines used across enterprise data sources.</p>
+          <p>I love the messy middle of applied AI — cutting latency on retrieval paths, re-architecting indexing for scale, building agents that actually reason with tools, and turning research ideas into production. Outside of work, I build voice agents, career-intelligence tools, and hackathon projects to keep learning at the edge.</p>
+          <p>A few things I've been working with recently:</p>
+          <ul class="chip-row">
+            <li>Python</li><li>PyTorch</li><li>LangGraph</li><li>RAG</li><li>PySpark</li><li>OCI GenAI</li>
+          </ul>
+          <a href="assets/Ritika_Soni_Resume.pdf" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section">
+      <h2 class="section-title"><span>02.</span> Experience</h2>
+      <div class="exp-wrap reveal">
+        <div class="exp-tabs" role="tablist">
+          <button class="exp-tab active" data-tab="0">Oracle · Data Scientist</button>
+          <button class="exp-tab" data-tab="1">Oracle · DS Intern</button>
+          <button class="exp-tab" data-tab="2">NUS · Research</button>
+        </div>
+        <div class="exp-panels">
+          <div class="exp-panel active" data-panel="0">
+            <h3>Data Scientist <span>@ Oracle — Fusion Data Intelligence</span></h3>
+            <p class="exp-meta">Jul 2024 – Present · Bengaluru</p>
+            <ul>
+              <li>Redesigned source-format migration by splitting business, schema &amp; access-control metadata into separate flows, cutting future source-onboarding effort by <strong>~70%</strong>.</li>
+              <li>Replaced O(m·n) file-version indexing with O(n) query-time merging, reducing duplicate embeddings, storage and release-prep at scale.</li>
+              <li>Built a query-routing &amp; candidate-generation engine for the <strong>NetSuite Intelligent Activation Engine</strong> (patent in progress); hybrid lookup + embedding search cut activation latency by <strong>~60–70%</strong>.</li>
+              <li>Led end-to-end onboarding of NetSuite into the <strong>AI Concierge</strong> with a source-aware RAG / intent-execution flow and runtime access mapping.</li>
+              <li>Built a distributed error-handling framework across 20+ failure scenarios; automated checks reduced manual triage by <strong>~70%</strong>.</li>
+            </ul>
+          </div>
+          <div class="exp-panel" data-panel="1">
+            <h3>Data Science Intern <span>@ Oracle — RL for Supplier Selection</span></h3>
+            <p class="exp-meta">May 2023 – Jul 2023 · Bengaluru</p>
+            <p class="exp-intro">A summer research internship on Oracle's supply-chain team, framing supplier selection as a sequential decision problem and solving it with reinforcement learning instead of static, rule-based procurement heuristics.</p>
+            <ul>
+              <li>Built a <strong>Deep Q-Learning</strong> agent with neural-network function approximation that learns to pick optimal suppliers for a given product from reward feedback, rather than relying on hand-tuned scoring rules.</li>
+              <li>Used RL to <strong>generate dynamic demand distributions</strong> directly from the environment, removing the need for pre-assumed statistical distributions and letting the model adapt as demand patterns shift.</li>
+              <li>Co-authored and <strong>drafted a patent</strong> for the RL-based supplier-selection approach (currently in progress).</li>
+            </ul>
+          </div>
+          <div class="exp-panel" data-panel="2">
+            <h3>Research Intern <span>@ National University of Singapore</span></h3>
+            <p class="exp-meta">Apr 2022 – Jul 2022 · Singapore · Prof. Ganesh Neelakanta Iyer</p>
+            <p class="exp-intro">A research internship at NUS applying machine learning to real-world geospatial and epidemiological data — combining unsupervised structure discovery with supervised forecasting during the Covid-19 period.</p>
+            <ul>
+              <li>Ran an <strong>unsupervised, exploratory analysis of geolocational data</strong>, using the <strong>Elbow Method</strong> to choose the optimal number of clusters (best <em>k</em>) before modeling.</li>
+              <li>Formed location clusters with <strong>K-Means</strong>, structured the pipeline data as JSON, and built interactive map visualizations using <strong>Folium &amp; Geopy</strong> to interpret the resulting groups.</li>
+              <li>Built supervised forecasting models to <strong>predict Covid-19 case counts 10 days ahead</strong>, comparing <strong>SVM</strong> and <strong>Polynomial Regression</strong> for the projection.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span>03.</span> Projects</h2>
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-microphone-lines pc-icon"></i>
+            <div class="pc-links"><a href="https://github.com/inosritika/voice-interview-coach" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <h3>Voice Interview Coach</h3>
+          <p>Streaming, fully-local voice agent (VAD → STT → LLM → TTS). Clause-level synthesis cut response latency to 2.75s; full-duplex barge-in via semantic turn detection with cancellable async tasks and an agentic, LLM-judged interviewer.</p>
+          <ul class="pc-tags"><li>VAD</li><li>Whisper</li><li>LLM</li><li>Agentic</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-diagram-project pc-icon"></i></div>
+          <h3>Enterprise Work Intelligence — Codex Plugin</h3>
+          <p>OraHacks 2026. A Codex plugin unifying approved context from Outlook, Slack, Jira, Confluence, Zoom &amp; repos into a prioritized dashboard, with a multi-agent workflow spawning parallel sub-agents and compact JSON context memory.</p>
+          <ul class="pc-tags"><li>Multi-agent</li><li>Codex</li><li>MCP</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-chart-line pc-icon"></i>
+            <div class="pc-links"><a href="https://crustdata-hackathon-yc.vercel.app" target="_blank" rel="noopener" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="https://github.com/inosritika/crustdata-hackathon-yc" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <h3>Trajectory — Career Intelligence</h3>
+          <p>Crustdata × Y Combinator Hackathon. A Crustdata-API-backed career analyzer with peer benchmarks, promotion velocity &amp; "career twins" — people with similar trajectories who diverged — surfacing future paths, pay bands and warm intros.</p>
+          <ul class="pc-tags"><li>Next.js</li><li>Crustdata API</li><li>LLM</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-comments pc-icon"></i>
+            <div class="pc-links"><a href="https://github.com/inosritika/Deep-Learning-for-NLP-ELL884" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <h3>Counterspeech &amp; Text Classification</h3>
+          <p>NLP (Prof. Tanmoy Chakraborty). Fine-tuned DialoGPT with PEFT adapters (LoRA &amp; prompt tuning) after T5/BART baselines for 5 intent classes; built BERT/GPT classifiers on ~50K titles/abstracts with custom heads and 14-label training.</p>
+          <ul class="pc-tags"><li>DialoGPT</li><li>LoRA</li><li>BERT</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-image pc-icon"></i>
+            <div class="pc-links"><a href="https://github.com/inosritika/Digital-Image-Processing-ELL715" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <h3>Generative Modeling for Image Synthesis</h3>
+          <p>Digital Image Processing. Implemented VAE &amp; DCGAN pipelines on MNIST/CIFAR-10 to learn distributions and sample latent spaces; tuned architecture &amp; hyperparameters, comparing stability, fidelity, convergence and mode-collapse.</p>
+          <ul class="pc-tags"><li>VAE</li><li>DCGAN</li><li>PyTorch</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="pc-top"><i class="fa-solid fa-server pc-icon"></i>
+            <div class="pc-links"><a href="https://github.com/inosritika/Operating-Systems-MTL458" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <h3>Systems &amp; Algorithms Coursework</h3>
+          <p>A collection of systems-level work from IIT Delhi — an OS process scheduler in C, cryptocurrency data-structures project, cloud-computing experiments and DSA assignments spanning C, C++, Java and Verilog.</p>
+          <ul class="pc-tags"><li>C/C++</li><li>Java</li><li>OS</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span>04.</span> Skills</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-code"></i> Languages</h3>
+          <ul><li>Python</li><li>C / C++</li><li>SQL</li><li>Java</li><li>JavaScript / Node.js</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-robot"></i> AI / ML &amp; LLM</h3>
+          <ul><li>PyTorch</li><li>Hugging Face Transformers</li><li>LangChain</li><li>LangGraph</li><li>RAG</li><li>Agentic Workflows</li><li>Semantic Search</li><li>LLM Evaluation</li><li>MCP</li><li>Prompt Engineering</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-waveform"></i> Voice &amp; Speech</h3>
+          <ul><li>Whisper / faster-whisper</li><li>Text-to-Speech</li><li>Voice Activity Detection</li><li>Semantic Turn Detection</li><li>WebSockets</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3><i class="fa-solid fa-database"></i> Data &amp; Cloud</h3>
+          <ul><li>PySpark</li><li>NumPy</li><li>Pandas</li><li>Scikit-Learn</li><li>OCI</li><li>ADW</li><li>Object Storage</li><li>Docker</li><li>Jenkins</li><li>Git</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title center"><span>05.</span> Get In Touch</h2>
+      <p class="contact-lead reveal">I'm always happy to talk about applied AI, LLM systems, or interesting problems. Drop me a line and I'll get back to you.</p>
+      <div class="contact-actions reveal">
+        <a href="mailto:ritikasoni.iit.delhi@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Say Hello</a>
+        <div class="contact-socials">
+          <a href="https://github.com/inosritika" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ritika001/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:ritikasoni.iit.delhi@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <footer class="footer">Designed &amp; built by Ritika Soni · 2026</footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
