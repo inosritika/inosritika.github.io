@@ -214,6 +214,31 @@ main { margin-left: 84px; }
 }
 .feature-media:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -22px rgba(40,40,90,.45); }
 .feature-media svg { width: 100%; height: 100%; display: block; }
+
+/* editorial poster panels (no fake UI) */
+.poster { display: flex; flex-direction: column; justify-content: center; gap: 13px; padding: 42px; }
+.poster-kicker { font-size: .72rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.poster-head { font-family: 'Poppins'; font-weight: 800; font-size: 1.95rem; line-height: 1.16; letter-spacing: -.01em; }
+.poster-sub { font-size: .93rem; line-height: 1.55; max-width: 40ch; }
+.poster-foot { margin-top: 6px; font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace; font-size: .74rem; letter-spacing: .04em; }
+.poster-voice { background: #14163a; }
+.poster-voice .poster-kicker { color: #4fd6c0; }
+.poster-voice .poster-head { color: #ffffff; }
+.poster-voice .poster-sub { color: #b9bfe6; }
+.poster-voice .poster-foot { color: #7f87c4; }
+.poster-enterprise { background: #eeecfa; background: linear-gradient(160deg, #f1effb, #e7e3f7); }
+.poster-enterprise .poster-kicker { color: #5b62d6; }
+.poster-enterprise .poster-head { color: #1a1b6b; }
+.poster-enterprise .poster-sub { color: #55567a; }
+.poster-enterprise .poster-foot { color: #8a8bb0; }
+
+/* live embed of a real running app */
+.live-embed { position: relative; display: block; background: #0a1030; }
+.embed-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: #4cd6ff; font-family: 'Poppins'; font-weight: 700; letter-spacing: .04em; font-size: 1rem; }
+.live-embed iframe { position: absolute; inset: 0; width: 200%; height: 200%; transform: scale(.5); transform-origin: top left; border: 0; pointer-events: none; }
+.embed-badge { position: absolute; top: 12px; right: 12px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; background: rgba(8,14,42,.72); color: #e6f7ff; font-size: .72rem; font-weight: 600; padding: 6px 12px; border-radius: 20px; backdrop-filter: blur(4px); }
+.embed-badge .dot { width: 7px; height: 7px; border-radius: 50%; background: #4cd6ff; box-shadow: 0 0 8px #4cd6ff; animation: pulse 1.8s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
 .feature-kicker { color: var(--accent); font-weight: 700; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; }
 .feature-info h3 { font-family: 'Poppins'; font-size: 1.7rem; color: var(--navy); margin: 8px 0 12px; font-weight: 700; }
 .feature-info p { color: var(--muted); font-size: .98rem; }
@@ -293,6 +318,8 @@ main { margin-left: 84px; }
   .feature { grid-template-columns: 1fr; gap: 22px; }
   .feature.reverse .feature-media { order: 0; }
   .feature-info h3 { font-size: 1.4rem; }
+  .poster { padding: 30px; }
+  .poster-head { font-size: 1.55rem; }
   .exp-tabs { flex-direction: row; overflow-x: auto; }
   .exp-tab { border-left: none; border-bottom: 3px solid transparent; white-space: nowrap; }
   .exp-tab.active { border-left: none; border-bottom-color: var(--accent); }
