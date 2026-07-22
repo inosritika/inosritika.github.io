@@ -157,8 +157,9 @@ main { margin-left: 84px; }
 /* ===== About ===== */
 .about-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 46px; align-items: start; }
 .about-grid.single { grid-template-columns: 1fr; }
-.about-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin: 14px 0 26px; }
-.about-cols p { margin: 0; font-size: 1.04rem; line-height: 1.95; }
+.about-lead { font-size: 1.12rem; line-height: 1.9; margin: 14px 0 4px; color: var(--text); }
+.about-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin: 22px 0 26px; }
+.about-cols p { margin: 0; font-size: 1.02rem; line-height: 1.9; }
 .about-text p { margin-bottom: 16px; color: var(--text); }
 .about-text > p:first-child { font-size: 1.35rem; font-weight: 600; color: var(--navy); font-family: 'Poppins'; margin-bottom: 8px; }
 .about-text .btn { margin-top: 10px; }
